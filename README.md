@@ -1,22 +1,78 @@
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-green)
+![Maven](https://img.shields.io/badge/Maven-Build-success)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-orange)
+![Security](https://img.shields.io/badge/Spring%20Security-Enabled-red)
 
-# Banking Application
+🏦 Banking Application
+A Spring Boot–based Banking Application that demonstrates a layered architecture and modern backend practices.
+This project showcases clean code, modular design, and enterprise-grade features for managing customer accounts and transactions.
 
-Developed using Spring Boot, which follows a layered architecture including:
+📐 Architecture
+The application follows a layered architecture:
 
-Controller layer for RESTful APIs
+Controller Layer → Exposes RESTful APIs
 
-DTO and Entity layers for data transfer and database mapping
+DTO & Entity Layers → Handles data transfer and database mapping
 
-Repository layer for database operations
+Repository Layer → Manages database operations with JPA/Hibernate
 
-Service layer for business logic
+Service Layer → Implements business logic
 
-The key technologies I used in this project are:
-Java, Spring Boot, Hibernate, JPA, Lombok, PostgreSQL, RESTful APIs, Postman, Maven, and Spring Security.
+⚙️ Tech Stack
+Language: Java
 
-This application includes features such as customer account creation, deposit, withdrawal, fund transfer, transaction history, and email notifications.
-For testing the APIs, I used Postman.
-For database management, I used PostgreSQL.
-To reduce boilerplate code, I used Lombok annotations.
-For security, I implemented Spring Security.
-The entire project was built using Maven for dependency management.
+Frameworks: Spring Boot, Spring Security
+
+ORM: Hibernate, JPA
+
+Database: PostgreSQL
+
+Tools: Maven (dependency management), Postman (API testing)
+
+Utilities: Lombok (to reduce boilerplate code)
+
+✨ Features
+👤 Customer account creation
+
+💰 Deposit & withdrawal
+
+🔄 Fund transfer between accounts
+
+📜 Transaction history tracking
+
+📧 Email notifications for key events
+
+🔒 Secure authentication & authorization with Spring Security
+
+🚀 Getting Started
+Clone the repository:
+
+bash
+git clone https://github.com/ImHarshad1/Banking-Application-Project.git
+Navigate to the project folder and build with Maven:
+
+bash
+mvn clean install
+Run the application:
+
+bash
+mvn spring-boot:run
+Access APIs at: http://localhost:8080
+
+🧪 Testing
+APIs tested using Postman
+
+Database managed with PostgreSQL
+
+🔒 Security
+Implemented Spring Security for authentication & authorization
+
+Role-based access control for sensitive operations
+
+📌 Highlights
+Clean, modular code with DTO mapping
+
+Global exception handling for robust error management
+
+Built with scalability and maintainability in mind
