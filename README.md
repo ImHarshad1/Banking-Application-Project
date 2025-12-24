@@ -4,7 +4,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-orange)
 ![Security](https://img.shields.io/badge/Spring%20Security-Enabled-red)
 
-🏦 Banking Application
+🏦** Banking Application**
 A Spring Boot–based Banking Application that demonstrates a layered architecture and modern backend practices.
 This project showcases clean code, modular design, and enterprise-grade features for managing customer accounts and transactions.
 
