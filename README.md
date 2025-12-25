@@ -77,20 +77,6 @@ Built with scalability and maintainability in mind
 
 Future‑ready with Lombok, Security, and Validations  
 
----
-
-## ✅ Roadmap 
-- [x] CRUD Operations
-- [x] Transaction Management
-- [x] Global Exception Handling
-- [x] Lombok Integration
-- [x] Spring Security (JWT)
-- [x] Validations
-- [x] Swagger/OpenAPI Docs
-- [x] Email Notifications
-- [x] Unit & Integration Tests
-
----
 
 ## 🛡️ Vision  
 This project is more than practice — it’s my **major portfolio project**.  
@@ -98,5 +84,3 @@ It demonstrates industry‑standard patterns, preparing me for real‑world proj
 As I add features like **Security, Lombok, Validations, and Swagger**, this repo will evolve into a **complete Spring Boot reference**.  
 
 ---
-
-**✅ This is now one single Markdown block — copy it straight into your `README.md` and GitHub will render everything perfectly.**
