@@ -41,19 +41,20 @@ The application follows a layered architecture:
 
 ---
 
-🧪 Testing
+##🧪 Testing
 APIs tested using Postman
 
 Database managed with PostgreSQL
 
-🔒 Security
+## Security
 Implemented Spring Security for authentication & authorization
 
 Role‑based access control for sensitive operations
 
 Planned JWT integration for stateless authentication
 
-📌 Highlights
+##📌 Highlights
+
 Clean, modular code with DTO mapping
 
 Global exception handling for robust error management
@@ -62,7 +63,7 @@ Built with scalability and maintainability in mind
 
 Future‑ready with Lombok, Security, and Validations
 
-✅ Roadmap
+##✅ Roadmap
 [x] CRUD Operations
 
 [x] Transaction Management
@@ -81,27 +82,13 @@ Future‑ready with Lombok, Security, and Validations
 
 [ ] Unit & Integration Tests
 
-🤝 Contribution
-Contributions are welcome!
 
-Fork the repo
-
-Create a new branch (feature/YourFeature)
-
-Commit your changes
-
-Push to the branch
-
-Open a Pull Request
-
-🛡️ Vision
+##🛡️ Vision
 This project is more than practice — it’s my major portfolio project.
 It demonstrates industry‑standard patterns, preparing me for real‑world projects and interviews.
 As I add features like Security, Lombok, Validations, and Swagger, this repo will evolve into a complete Spring Boot reference.
 
-
----
-
+##
 ✅ This is now **one single Markdown block** — copy it straight into your `README.md` and GitHub will render everything perfectly.  
 
 Would you like me to also embed a **simple ASCII architecture diagram** inside this same block so your README visually shows the flow `Controller → Service → Repository → Database`?
