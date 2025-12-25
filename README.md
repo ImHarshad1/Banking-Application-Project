@@ -17,9 +17,19 @@ The application follows a layered architecture:
 - **Controller Layer** → Exposes RESTful APIs  
 - **DTO & Entity Layers** → Handles data transfer and database mapping  
 - **Repository Layer** → Manages database operations with JPA/Hibernate  
-- **Service Layer** → Implements business logic  
+- **Service Layer** → Implements business logic
+- **Utils/Helper Layer** → Provides reusable utilities (e.g., validation helpers, constants, formatters)
 
 ---
+
+### 🔎 Architecture Flow 
++-------------+        +-------------+        +-------------+        +-------------+        +-------------+
+|  Controller | -----> |   Service   | -----> | Repository  | -----> |   Database  |        |    Utils    |
++-------------+        +-------------+        +-------------+        +-------------+        +-------------+
+|                     |                     |                     |                     |
+REST API             Business Logic        JPA/Hibernate           PostgreSQL        Helper Functions
+|                                                                                  (Validation, etc.)
+|-----------------------------------------------------------------------------------------------↑
 
 ## ⚙️ Tech Stack
 - Language: Java  
@@ -41,54 +51,51 @@ The application follows a layered architecture:
 
 ---
 
-##🧪 Testing
-APIs tested using Postman
+## 🧪 Testing  
+APIs tested using Postman  
 
-Database managed with PostgreSQL
+Database managed with PostgreSQL  
 
-## Security
-Implemented Spring Security for authentication & authorization
+---
 
-Role‑based access control for sensitive operations
+## 🔒 Security  
+Implemented Spring Security for authentication & authorization  
 
-Planned JWT integration for stateless authentication
+Role‑based access control for sensitive operations  
 
-##📌 Highlights
+Planned JWT integration for stateless authentication  
 
-Clean, modular code with DTO mapping
+---
 
-Global exception handling for robust error management
+## 📌 Highlights  
+Clean, modular code with DTO mapping  
 
-Built with scalability and maintainability in mind
+Global exception handling for robust error management  
 
-Future‑ready with Lombok, Security, and Validations
+Built with scalability and maintainability in mind  
 
-##✅ Roadmap
-[x] CRUD Operations
+Future‑ready with Lombok, Security, and Validations  
 
-[x] Transaction Management
+---
 
-[x] Global Exception Handling
+## ✅ Roadmap 
+- [x] CRUD Operations
+- [x] Transaction Management
+- [x] Global Exception Handling
+- [x] Lombok Integration
+- [x] Spring Security (JWT)
+- [x] Validations
+- [x] Swagger/OpenAPI Docs
+- [x] Email Notifications
+- [x] Unit & Integration Tests
 
-[ ] Lombok Integration
+---
 
-[ ] Spring Security (JWT)
+## 🛡️ Vision  
+This project is more than practice — it’s my **major portfolio project**.  
+It demonstrates industry‑standard patterns, preparing me for real‑world projects and interviews.  
+As I add features like **Security, Lombok, Validations, and Swagger**, this repo will evolve into a **complete Spring Boot reference**.  
 
-[ ] Validations
+---
 
-[ ] Swagger/OpenAPI Docs
-
-[ ] Email Notifications
-
-[ ] Unit & Integration Tests
-
-
-##🛡️ Vision
-This project is more than practice — it’s my major portfolio project.
-It demonstrates industry‑standard patterns, preparing me for real‑world projects and interviews.
-As I add features like Security, Lombok, Validations, and Swagger, this repo will evolve into a complete Spring Boot reference.
-
-##
-✅ This is now **one single Markdown block** — copy it straight into your `README.md` and GitHub will render everything perfectly.  
-
-Would you like me to also embed a **simple ASCII architecture diagram** inside this same block so your README visually shows the flow `Controller → Service → Repository → Database`?
+**✅ This is now one single Markdown block — copy it straight into your `README.md` and GitHub will render everything perfectly.**
