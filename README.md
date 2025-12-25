@@ -4,62 +4,42 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-orange)
 ![Security](https://img.shields.io/badge/Spring%20Security-Enabled-red)
 
-🏦 Banking Application
+# 🏦 Banking Application
 
-A Spring Boot–based Banking Application that demonstrates a layered architecture and modern backend practices.
-This project showcases clean code, modular design, and enterprise-grade features for managing customer accounts and transactions.
+A **Spring Boot–based Banking Application** that demonstrates a layered architecture and modern backend practices.  
+This project showcases clean code, modular design, and enterprise‑grade features for managing customer accounts and transactions.
 
-📐 Architecture
+---
+
+## 📐 Architecture
 The application follows a layered architecture:
 
-Controller Layer → Exposes RESTful APIs
+- **Controller Layer** → Exposes RESTful APIs  
+- **DTO & Entity Layers** → Handles data transfer and database mapping  
+- **Repository Layer** → Manages database operations with JPA/Hibernate  
+- **Service Layer** → Implements business logic  
 
-DTO & Entity Layers → Handles data transfer and database mapping
+---
 
-Repository Layer → Manages database operations with JPA/Hibernate
+## ⚙️ Tech Stack
+- Language: Java  
+- Frameworks: Spring Boot, Spring Security  
+- ORM: Hibernate, JPA  
+- Database: PostgreSQL  
+- Tools: Maven (dependency management), Postman (API testing)  
+- Utilities: Lombok (to reduce boilerplate code)  
 
-Service Layer → Implements business logic
+---
 
-⚙️ Tech Stack
-Language: Java
+## ✨ Features
+- 👤 Customer account creation  
+- 💰 Deposit & withdrawal  
+- 🔄 Fund transfer between accounts  
+- 📜 Transaction history tracking  
+- 📧 Email notifications for key events  
+- 🔒 Secure authentication & authorization with Spring Security  
 
-Frameworks: Spring Boot, Spring Security
-
-ORM: Hibernate, JPA
-
-Database: PostgreSQL
-
-Tools: Maven (dependency management), Postman (API testing)
-
-Utilities: Lombok (to reduce boilerplate code)
-
-✨ Features
-👤 Customer account creation
-
-💰 Deposit & withdrawal
-
-🔄 Fund transfer between accounts
-
-📜 Transaction history tracking
-
-📧 Email notifications for key events
-
-🔒 Secure authentication & authorization with Spring Security
-
-🚀 Getting Started
-Clone the repository:
-
-bash
-git clone https://github.com/ImHarshad1/Banking-Application-Project.git
-Navigate to the project folder and build with Maven:
-
-bash
-mvn clean install
-Run the application:
-
-bash
-mvn spring-boot:run
-Access APIs at: http://localhost:8080
+---
 
 🧪 Testing
 APIs tested using Postman
@@ -69,7 +49,9 @@ Database managed with PostgreSQL
 🔒 Security
 Implemented Spring Security for authentication & authorization
 
-Role-based access control for sensitive operations
+Role‑based access control for sensitive operations
+
+Planned JWT integration for stateless authentication
 
 📌 Highlights
 Clean, modular code with DTO mapping
@@ -77,3 +59,49 @@ Clean, modular code with DTO mapping
 Global exception handling for robust error management
 
 Built with scalability and maintainability in mind
+
+Future‑ready with Lombok, Security, and Validations
+
+✅ Roadmap
+[x] CRUD Operations
+
+[x] Transaction Management
+
+[x] Global Exception Handling
+
+[ ] Lombok Integration
+
+[ ] Spring Security (JWT)
+
+[ ] Validations
+
+[ ] Swagger/OpenAPI Docs
+
+[ ] Email Notifications
+
+[ ] Unit & Integration Tests
+
+🤝 Contribution
+Contributions are welcome!
+
+Fork the repo
+
+Create a new branch (feature/YourFeature)
+
+Commit your changes
+
+Push to the branch
+
+Open a Pull Request
+
+🛡️ Vision
+This project is more than practice — it’s my major portfolio project.
+It demonstrates industry‑standard patterns, preparing me for real‑world projects and interviews.
+As I add features like Security, Lombok, Validations, and Swagger, this repo will evolve into a complete Spring Boot reference.
+
+
+---
+
+✅ This is now **one single Markdown block** — copy it straight into your `README.md` and GitHub will render everything perfectly.  
+
+Would you like me to also embed a **simple ASCII architecture diagram** inside this same block so your README visually shows the flow `Controller → Service → Repository → Database`?
