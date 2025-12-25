@@ -27,9 +27,8 @@ The application follows a layered architecture:
 +-------------+        +-------------+        +-------------+        +-------------+        +-------------+
 |  Controller | -----> |   Service   | -----> | Repository  | -----> |   Database  |        |    Utils    |
 +-------------+        +-------------+        +-------------+        +-------------+        +-------------+
-       |                     |                     |                     |                     |
-   REST API             Business Logic        JPA/Hibernate           PostgreSQL        Helper Functions
-                                                                                     (Validation, etc.)
+       |                     |                       |                      |                       |
+   REST API             Business Logic         JPA/Hibernate           PostgreSQL            Helper Functions
        |-----------------------------------------------------------------------------------------------↑
 </pre>
 
