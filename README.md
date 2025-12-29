@@ -81,19 +81,20 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 
 ---
 
-👨‍💻 Author
-Harshad Bhavar
+## 👨‍💻 Author
+**Harshad Bhavar**
 Java Backend Developer | Spring Boot
 🔗 GitHub: https://github.com/ImHarshad1
 
 ---
 
-⭐ Support
-If you like this project:
+## ⭐ Support
+**If you like this project:**
 
 ⭐ Star the repository
 
 🍴 Fork it
 
 🛠 Submit pull requests
+
 ---
