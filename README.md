@@ -40,37 +40,31 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 
 ### Flow Diagram
 +-------------------+
-|   Client (UI)     |
+| Client (UI) |
 +-------------------+
-|
-v
+↓
 +-------------------+
-| REST Controllers  |
+| REST Controllers |
 +-------------------+
-|
-v
+↓
 +-------------------+
-|   DTO Layer       |
+| DTO Layer |
 +-------------------+
-|
-v
+↓
 +-------------------+
-|   Service Layer   |
+| Service Layer |
 +-------------------+
-|
-v
+↓
 +-------------------+
-| Repository Layer  |
+| Repository Layer |
 +-------------------+
-|
-v
+↓
 +-------------------+
-|   Entity Layer    |
+| Entity Layer |
 +-------------------+
-|
-v
+↓
 +-------------------+
-|   PostgreSQL DB   |
+| PostgreSQL/DB |
 +-------------------+
 
 ---
