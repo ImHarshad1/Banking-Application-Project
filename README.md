@@ -1,17 +1,87 @@
 # 🏦 Banking Application Project
- ![Java](https://img.shields.io/badge/Java-Programming-blue) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-Framework-green) ![Hibernate](https://img.shields.io/badge/Hibernate-ORM-orange) ![JPA](https://img.shields.io/badge/JPA-Persistence-yellow) ![Lombok](https://img.shields.io/badge/Lombok-Annotations-lightgrey) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blueviolet) ![RESTful API](https://img.shields.io/badge/REST-API-success) ![Postman](https://img.shields.io/badge/Postman-Testing-critical) ![Spring Security](https://img.shields.io/badge/Spring%20Security-Secure-brightgreen)
 
-A comprehensive Spring Boot project designed to simulate core banking operations with a focus on clean architecture, layered design, and professional documentation. This project demonstrates filtering with JPA, RESTful APIs, and secure backend integration.
+![Java](https://img.shields.io/badge/Java-Programming-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-Framework-green)
+![Hibernate](https://img.shields.io/badge/Hibernate-ORM-orange)
+![JPA](https://img.shields.io/badge/JPA-Persistence-yellow)
+![Lombok](https://img.shields.io/badge/Lombok-Annotations-lightgrey)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blueviolet)
+![RESTful API](https://img.shields.io/badge/REST-API-success)
+![Postman](https://img.shields.io/badge/Postman-Testing-critical)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-Secure-brightgreen)
+
+A professional Spring Boot project simulating a **Banking Application** with layered architecture, JPA filtering, RESTful APIs, and secure backend integration. This project demonstrates industry-standard practices for building scalable and maintainable enterprise applications.
 
 ---
 
 ## 📐 Architecture
 
-The project follows a **layered architecture** ensuring separation of concerns:
+The project follows a **multi-layered architecture** ensuring separation of concerns:
 
-- **Presentation Layer**: REST Controllers handling HTTP requests and responses.
-- **Service Layer**: Business logic, validations, and orchestration.
-- **Repository Layer**: Data persistence using Spring Data JPA.
-- **Database Layer**: PostgreSQL for relational data storage.
+- **Controller Layer** (`controller/`)  
+  Handles incoming HTTP requests, maps endpoints, and returns responses.  
 
-### ASCII Flow Diagram
+- **DTO Layer** (`dto/`)  
+  Defines Data Transfer Objects for clean request/response handling.  
+
+- **Entity Layer** (`entity/`)  
+  Contains JPA entities representing database tables.  
+
+- **Service Layer** (`service/`)  
+  Implements business logic, validations, and orchestrates between controllers and repositories.  
+
+- **Repository Layer** (`repository/`)  
+  Interfaces with the database using Spring Data JPA.  
+
+- **Configuration Layer** (`config/`)  
+  Manages application-wide configurations such as security, CORS, and beans.  
+
+---
+
+### Flow Diagram
++-------------------+
+|   Client (UI)     |
++-------------------+
+|
+v
++-------------------+
+| REST Controllers  |
++-------------------+
+|
+v
++-------------------+
+|   DTO Layer       |
++-------------------+
+|
+v
++-------------------+
+|   Service Layer   |
++-------------------+
+|
+v
++-------------------+
+| Repository Layer  |
++-------------------+
+|
+v
++-------------------+
+|   Entity Layer    |
++-------------------+
+|
+v
++-------------------+
+|   PostgreSQL DB   |
++-------------------+
+
+---
+## ✨ Features
+
+- User account creation and management  
+- Transaction handling (deposit, withdraw, transfer)  
+- JPA filtering for advanced queries  
+- Secure authentication and authorization  
+- Exception handling and logging  
+- DTO-based request/response models  
+- Configurable security layer  
+
+---
