@@ -14,6 +14,22 @@ A professional Spring Boot project simulating a **Banking Application** with lay
 
 ---
 
+## ✨ Features
+
+**👤 Customer Account Management**– Create and manage customer accounts with unique identifiers.
+
+**💰 Transactions** – Deposit, withdraw, and transfer funds securely between accounts.
+
+**📜 Transaction History** – Maintain detailed logs of all customer transactions.
+
+**📧 Email Notifications** – Automated alerts for deposits, withdrawals, and transfers.
+
+**🔐 Security**– Authentication and authorization using Spring Security with role-based access.
+
+**📄 Bank Statement Generation** – Generate PDF statements for accounts and send them via email.
+
+---
+
 ## 📐 Architecture
 
 The project follows a **multi-layered architecture** ensuring separation of concerns:
@@ -35,22 +51,7 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 
 - **Configuration Layer** (`config/`)  
   Manages application-wide configurations such as security, CORS, and beans.  
-
----
-
-## ✨ Features
-
-- **Customer account creation and profile management**  
-- **Secure authentication and authorization** using **Spring Security**  
-- **Deposit, withdrawal, and fund transfer operations**  
-- **Transaction history tracking** with detailed records  
-- **Bank statement generation** for customer accounts  
-- **Email notification service** for transactions and important events  
-- **JPA filtering** for advanced and dynamic database queries  
-- **DTO-based request and response models** for clean API design  
-- **Centralized exception handling and structured logging**  
-- **Configurable security and application settings**  
-- **Modular, layered architecture** following industry best practices  
+- **Utils Layer** (`utils/`) – Provides helper functions like email notifications and common utilities.
 
 ---
 
@@ -63,9 +64,9 @@ The project follows a **multi-layered architecture** ensuring separation of conc
                                                                |
                                                                v
 +-------------------+   +-------------------------+   +----------------------+   +------------------+
-| Service Layer     | → | Repository Layer        | → | Entity Layer          | → | PostgreSQL DB    |
-| (Business Logic)  |   | (JPA / Hibernate ORM)   |   | (DB Mapping)          |   |                  |
-+-------------------+   +-------------------------+   +----------------------+   +------------------+
+|   Service Layer   | → |     Repository Layer    | → |      Entity Layer     | → |    PostgreSQL   |
+| (Business Logic)  |   |  (JPA / Hibernate ORM)  |   |      (DB Mapping)     |   |        DB       |
++-------------------+   +-------------------------+   +-----------------------+   +-----------------+
 
                                      +----------------------------+
                                      |         Utils Layer        |
@@ -74,6 +75,16 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 
 ```
 ----
+
+## 🔒 Security
+
+Implemented Spring Security for authentication and authorization.
+
+Role-based access control for different user types.
+
+Passwords stored securely using hashing.
+
+---
 
 ## 📈 Real-World Use Case
 
