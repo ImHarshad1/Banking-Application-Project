@@ -40,10 +40,10 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 
 ### 🔁 Application Architecture Flow
 ```text
-+-------------------+   +---------------------+   +-------------------------+   +-------------+
-| Client (Postman)  | → | Spring Security     | → | REST Controller Layer   | → | DTO Layer   |
-|        / UI       |   | AuthN & AuthZ       |   | (API Endpoints)         |   |             |
-+-------------------+   +---------------------+   +-------------------------+   +-------------+
++-------------------+   +---------------------+   +-------------------------+   +------------------+
+| Client (Postman)  | → |   Spring Security   | → |  REST Controller Layer  | → |     DTO Layer    |
+|        / UI       |   |    AuthN & AuthZ    |   |     (API Endpoints)     |   |  (Data Transfer) |
++-------------------+   +---------------------+   +-------------------------+   +------------------+
                                                                |
                                                                v
 +-------------------+   +-------------------------+   +----------------------+   +------------------+
@@ -52,8 +52,8 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 +-------------------+   +-------------------------+   +----------------------+   +------------------+
 
                            +----------------------------+
-                           | Utils Layer                |
-                           | (Email / Common Helpers)   |
+                           |         Utils Layer        |
+                           |  (Email / Common Helpers)  |
                            +----------------------------+
 
 ```
