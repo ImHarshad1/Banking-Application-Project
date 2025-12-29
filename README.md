@@ -38,34 +38,59 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 
 ---
 
-### Flow Diagram
-+-------------------+
-| Client (UI) |
-+-------------------+
-↓
-+-------------------+
-| REST Controllers |
-+-------------------+
-↓
-+-------------------+
-| DTO Layer |
-+-------------------+
-↓
-+-------------------+
-| Service Layer |
-+-------------------+
-↓
-+-------------------+
-| Repository Layer |
-+-------------------+
-↓
-+-------------------+
-| Entity Layer |
-+-------------------+
-↓
-+-------------------+
-| PostgreSQL/DB |
-+-------------------+
+### 🔁 Application Architecture Flow
++---------------------------+
+|   Client (Postman / UI)   |
++---------------------------+
+              |
+              v
++---------------------------+
+|   Spring Security Layer   |
+| (Authentication & AuthZ)  |
++---------------------------+
+              |
+              v
++---------------------------+
+|   REST Controller Layer   |
+|      (API Endpoints)      |
++---------------------------+
+              |
+              v
++---------------------------+
+|        DTO Layer          |
+| (Request / Response DTO)  |
++---------------------------+
+              |
+              v
++---------------------------+
+|       Service Layer       |
+|    (Business Logic)       |
++---------------------------+
+              |
+              v
++---------------------------+
+|     Repository Layer      |
+|   (JPA / Hibernate ORM)   |
++---------------------------+
+              |
+              v
++---------------------------+
+|        Entity Layer       |
+|  (Database Mapping)       |
++---------------------------+
+              |
+              v
++---------------------------+
+|      PostgreSQL DB        |
++---------------------------+
+              |
+              ^
+              |
++---------------------------+
+|      Utils Layer          |
+| (Email / Common Helpers)  |
++---------------------------+
+
 
 ---
 ## ✨ Features
@@ -77,5 +102,13 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 - Exception handling and logging  
 - DTO-based request/response models  
 - Configurable security layer  
+
+---
+
+📈 Real-World Use Case
+✔ Core banking backend logic
+✔ Financial transaction processing
+✔ Account & customer management
+✔ Backend foundation for Spring Boot / REST APIs
 
 ---
