@@ -40,70 +40,36 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 
 ### 🔁 Application Architecture Flow
 ```text
-+---------------------------+
-|   Client (Postman / UI)   |
-+---------------------------+
-              |
-              v
-+---------------------------+
-|   Spring Security Layer   |
-| (Authentication & AuthZ)  |
-+---------------------------+
-              |
-              v
-+---------------------------+
-|   REST Controller Layer   |
-|      (API Endpoints)      |
-+---------------------------+
-              |
-              v
-+---------------------------+
-|        DTO Layer          |
-| (Request / Response DTO)  |
-+---------------------------+
-              |
-              v
-+---------------------------+
-|       Service Layer       |
-|    (Business Logic)       |
-+---------------------------+
-              |
-              v
-+---------------------------+
-|     Repository Layer      |
-|   (JPA / Hibernate ORM)   |
-+---------------------------+
-              |
-              v
-+---------------------------+
-|        Entity Layer       |
-|  (Database Mapping)       |
-+---------------------------+
-              |
-              v
-+---------------------------+
-|      PostgreSQL DB        |
-+---------------------------+
-              |
-              ^
-              |
-+---------------------------+
-|      Utils Layer          |
-| (Email / Common Helpers)  |
-+---------------------------+
++-------------------+   +---------------------+   +-------------------------+   +-------------+
+| Client (Postman)  | → | Spring Security     | → | REST Controller Layer   | → | DTO Layer   |
+|        / UI       |   | AuthN & AuthZ       |   | (API Endpoints)         |   |             |
++-------------------+   +---------------------+   +-------------------------+   +-------------+
+                                                               |
+                                                               v
++-------------------+   +-------------------------+   +----------------------+   +------------------+
+| Service Layer     | → | Repository Layer        | → | Entity Layer          | → | PostgreSQL DB    |
+| (Business Logic)  |   | (JPA / Hibernate ORM)   |   | (DB Mapping)          |   |                  |
++-------------------+   +-------------------------+   +----------------------+   +------------------+
 
+                           +----------------------------+
+                           | Utils Layer                |
+                           | (Email / Common Helpers)   |
+                           +----------------------------+
 
-
----
+```
 ## ✨ Features
 
-- User account creation and management  
-- Transaction handling (deposit, withdraw, transfer)  
-- JPA filtering for advanced queries  
-- Secure authentication and authorization  
-- Exception handling and logging  
-- DTO-based request/response models  
-- Configurable security layer  
+- **Customer account creation and profile management**  
+- **Secure authentication and authorization** using **Spring Security**  
+- **Deposit, withdrawal, and fund transfer operations**  
+- **Transaction history tracking** with detailed records  
+- **Bank statement generation** for customer accounts  
+- **Email notification service** for transactions and important events  
+- **JPA filtering** for advanced and dynamic database queries  
+- **DTO-based request and response models** for clean API design  
+- **Centralized exception handling and structured logging**  
+- **Configurable security and application settings**  
+- **Modular, layered architecture** following industry best practices  
 
 ---
 
@@ -114,3 +80,19 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 ✔ Backend foundation for Spring Boot / REST APIs
 
 ---
+
+👨‍💻 Author
+Harshad Bhavar
+Java Backend Developer | Spring Boot
+🔗 GitHub: https://github.com/ImHarshad1
+
+---
+
+⭐ Support
+If you like this project:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+🛠 Submit pull requests
