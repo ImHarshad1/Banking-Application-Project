@@ -31,6 +31,8 @@ public class BankStatement {
     private TransactionRepository transactionRepository;
     private UserRepository userRepository;
 
+    private EmailService emailService;        //fixed error
+
     private static final String FILE = "C:\\Users\\harsh\\BANK\\Documents\\Statement.pdf";
 
     /**
@@ -130,6 +132,5 @@ public class BankStatement {
         emailService.sendEmailWithAttachment(emailDetails);
 
         return transactionList;
-
     }
 }

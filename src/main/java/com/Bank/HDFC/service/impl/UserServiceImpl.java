@@ -4,7 +4,9 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 import com.Bank.HDFC.dto.*;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.Bank.HDFC.entity.User;
@@ -12,7 +14,7 @@ import com.Bank.HDFC.repository.UserRepository;
 import com.Bank.HDFC.utils.AccountUtils;
 
 @Service
-
+@AllArgsConstructor
 public class UserServiceImpl implements UserService{
 
 	@Autowired
@@ -23,6 +25,9 @@ public class UserServiceImpl implements UserService{
 
     @Autowired
     TransactionService transactionService;
+
+    @Autowired
+    PasswordEncoder passwordEncoder;
 
 	@Override
 	public BankResponse createAccount(UserRequest userRequest) {
@@ -45,6 +50,7 @@ public class UserServiceImpl implements UserService{
                 .stateOfOrigin(userRequest.getStateOfOrigin())
                 .accountNumber(AccountUtils.generateAccountNumber())
 				.email(userRequest.getEmail())
+                .password(passwordEncoder.encode(userRequest.getPassword()))
 				.accountBalance(BigDecimal.ZERO)
 				.alternativePhoneNumber(userRequest.getAlternativePhoneNumber())
 				.status("ACTIVE")
@@ -255,5 +261,4 @@ public class UserServiceImpl implements UserService{
                 .build();
     }
     //Balance Enquiry, name Enquiry, credit, debit, transfer
-
 }
