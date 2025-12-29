@@ -38,6 +38,22 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 
 ---
 
+## ✨ Features
+
+- **Customer account creation and profile management**  
+- **Secure authentication and authorization** using **Spring Security**  
+- **Deposit, withdrawal, and fund transfer operations**  
+- **Transaction history tracking** with detailed records  
+- **Bank statement generation** for customer accounts  
+- **Email notification service** for transactions and important events  
+- **JPA filtering** for advanced and dynamic database queries  
+- **DTO-based request and response models** for clean API design  
+- **Centralized exception handling and structured logging**  
+- **Configurable security and application settings**  
+- **Modular, layered architecture** following industry best practices  
+
+---
+
 ### 🔁 Application Architecture Flow
 ```text
 +-------------------+   +---------------------+   +-------------------------+   +------------------+
@@ -57,26 +73,16 @@ The project follows a **multi-layered architecture** ensuring separation of conc
                                      +----------------------------+
 
 ```
-## ✨ Features
+----
 
-- **Customer account creation and profile management**  
-- **Secure authentication and authorization** using **Spring Security**  
-- **Deposit, withdrawal, and fund transfer operations**  
-- **Transaction history tracking** with detailed records  
-- **Bank statement generation** for customer accounts  
-- **Email notification service** for transactions and important events  
-- **JPA filtering** for advanced and dynamic database queries  
-- **DTO-based request and response models** for clean API design  
-- **Centralized exception handling and structured logging**  
-- **Configurable security and application settings**  
-- **Modular, layered architecture** following industry best practices  
+## 📈 Real-World Use Case
 
----
-
-📈 Real-World Use Case
 ✔ Core banking backend logic
+
 ✔ Financial transaction processing
+
 ✔ Account & customer management
+
 ✔ Backend foundation for Spring Boot / REST APIs
 
 ---
