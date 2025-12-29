@@ -39,6 +39,7 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 ---
 
 ### 🔁 Application Architecture Flow
+```text
 +---------------------------+
 |   Client (Postman / UI)   |
 +---------------------------+
@@ -90,6 +91,7 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 |      Utils Layer          |
 | (Email / Common Helpers)  |
 +---------------------------+
+
 
 
 ---
