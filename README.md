@@ -51,10 +51,10 @@ The project follows a **multi-layered architecture** ensuring separation of conc
 | (Business Logic)  |   | (JPA / Hibernate ORM)   |   | (DB Mapping)          |   |                  |
 +-------------------+   +-------------------------+   +----------------------+   +------------------+
 
-                           +----------------------------+
-                           |         Utils Layer        |
-                           |  (Email / Common Helpers)  |
-                           +----------------------------+
+                                     +----------------------------+
+                                     |         Utils Layer        |
+                                     |  (Email / Common Helpers)  |
+                                     +----------------------------+
 
 ```
 ## ✨ Features
@@ -96,3 +96,4 @@ If you like this project:
 🍴 Fork it
 
 🛠 Submit pull requests
+---
