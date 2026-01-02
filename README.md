@@ -1,7 +1,7 @@
 # 🏦 Banking Application Project
 
 ![Java](https://img.shields.io/badge/Java-Programming-blue)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-Framework-green)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-Framework-green) 
 ![Hibernate](https://img.shields.io/badge/Hibernate-ORM-orange)
 ![JPA](https://img.shields.io/badge/JPA-Persistence-yellow)
 ![Lombok](https://img.shields.io/badge/Lombok-Annotations-lightgrey)
