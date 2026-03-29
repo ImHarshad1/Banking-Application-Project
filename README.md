@@ -11,7 +11,7 @@
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-Secure-brightgreen)
 
 A professional Spring Boot project simulating a **Banking Application** with layered architecture, JPA filtering, RESTful APIs, and secure backend integration. This project demonstrates industry-standard practices for building scalable and maintainable enterprise applications.
-
+ 
 ---
 
 ## ✨ Features
